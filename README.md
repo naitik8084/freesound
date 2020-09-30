@@ -43,7 +43,7 @@ Below are instructions for setting up a local Freesound installation for develop
        freesound/freesound-data/avatar/
        ...
 
-4. Download [Freesound development similarity index](https://drive.google.com/file/d/1ydJUUXbQZbHrva4UZd3C05wDcOXI7v1m/view?usp=sharing) and the [Freesound tag recommendation models](https://drive.google.com/file/d/1snaktMysCXdThWKkYuKWoGc_Hk2BElmz/view?usp=sharing) and place their contents under `freesound-data/similarity_index/` and `freesound-data/tag_recommendation_models` directories respectively (you'll need to create the directories). You should get permission to download these files from Freesound admins.
+4. Download  [Freesound development similarity index](https://drive.google.com/file/d/1ydJUUXbQZbHrva4UZd3C05wDcOXI7v1m/view?usp=sharing) and the [Freesound tag recommendation models](https://drive.google.com/file/d/1snaktMysCXdThWKkYuKWoGc_Hk2BElmz/view?usp=sharing) and place their contents under `freesound-data/similarity_index/` and `freesound-data/tag_recommendation_models` directories respectively (you'll need to create the directories). You should get permission to download these files from Freesound admins.
 
 5. Rename `freesound/local_settings.example.py` file so you can customise Django settings if needed and create a `.env` file with your local user UID
 
@@ -102,6 +102,6 @@ In most situations it is possible that not all Freesound services need to be run
 
 ### Running tests
 
-You can run tests using the Django test runner in the `web` container like that:
+You can run tests using the Django test runner in the `web` container like that:-
 
     docker-compose run --rm web python manage.py test --settings=freesound.test_settings
